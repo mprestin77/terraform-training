@@ -1,0 +1,19 @@
+### Authentication details
+export TF_VAR_tenancy_ocid="<tenancy OCID>"
+export TF_VAR_user_ocid="<user OCID"
+export TF_VAR_fingerprint="<user fingerprint>"
+export TF_VAR_private_key_path="<full path of OCI API key file .oci/oci_api_key.pem>"
+
+### Region
+#export TF_VAR_region="us-ashburn-1, us-phoenix-1>"
+export TF_VAR_region="<region name>"
+
+### Compartment
+export TF_VAR_compartment_ocid="<compartment OCID>"
+
+### Public/private keys used on the instance
+export TF_VAR_ssh_public_key=$(cat <full path of ssh public key file>)
+export TF_VAR_ssh_private_key=$(cat <full path of ssh private key file>)
+
+### Student ID tag
+export TF_VAR_student="student<ID>"
