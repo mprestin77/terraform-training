@@ -5,10 +5,10 @@
 /* Instances */
 
 resource "oci_core_instance" "bastion" {
-  availability_domain = data.oci_identity_availability_domains.ADs.availability_domains[2]["name"]
+  availability_domain = data.oci_identity_availability_domains.ADs.availability_domains[0]["name"]
   compartment_id      = var.compartment_ocid
   display_name        = "bastion"
-  shape               = var.instance_shape
+  shape               = "VM.Standard2.1"
 
   source_details {
     source_id   = var.instance_image_id[var.region]
